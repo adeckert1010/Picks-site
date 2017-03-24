@@ -13,6 +13,14 @@ body{
 	box-shadow: 0 0 5px #222;
 }
 
+
+
+.filler {
+  text-align: center;
+  margin: auto;
+  
+}
+
 .text-center{
 	text-align: center;
 	margin-bottom: 1em;
@@ -47,6 +55,11 @@ body{
   align-self: center;
 }
 
+.nav li {
+  float: left;
+  margin-left: 20px;
+}
+
 .header img {
   width: 25%;
   height: 25%;
@@ -58,6 +71,9 @@ body{
 }
 
 @media only screen and (max-width: 480px) {
+  
+/*  Create a one column layout for the site on small screens */
+  
   .lightbox-gallery {
     flex-direction: column;
     align-items: center;
@@ -67,6 +83,11 @@ body{
     flex-direction: column;
     align-items: center;
   }
+  
+  .nav li {
+    float: none;
+    margin-top: .5em;
+  }
 
 .lightbox > div {
     margin-bottom: 10px;
@@ -74,10 +95,19 @@ body{
 }
 
 .about img {
+  display: block;
+  width: 30%;
+  margin: auto;
+}
+
+#family {
   width: 50%;
 }
 
 @media only screen and (max-width: 720px) {
+
+  /* Push header items to the edges of the screen to save space */
+  
   .header, .nav {
     justify-content: space-between
   }
