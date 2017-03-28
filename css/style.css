@@ -83,6 +83,11 @@ body{
     flex-direction: column;
     align-items: center;
   }
+    
+    .header img {
+        display: block;
+        margin: auto;
+    }    
   
   .nav li {
     float: none;
